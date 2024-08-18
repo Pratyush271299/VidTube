@@ -40,9 +40,19 @@ import tom from './tom.png';
 import upload from './upload.png';
 import user_profile from './user_profile.jpg';
 import voice_search from './voice_search.png';
+import pewdiepie from './pewdiepie.jpg';
+import justin_bieber from './justin_bieber.jpg';
+import five_minute_crafts from './five_minute_crafts.jpg';
+import mrbeast from './mrbeast.jpg';
+import nas_daily from './nas_daily.jpg';
 import pratyush from './pratyush.jpg'
 
 const assets = {
+    pewdiepie,
+    justin_bieber,
+    five_minute_crafts,
+    mrbeast,
+    nas_daily,
     automobiles,
     blogs,
     cameron,
