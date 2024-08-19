@@ -45,7 +45,8 @@ import justin_bieber from './justin_bieber.jpg';
 import five_minute_crafts from './five_minute_crafts.jpg';
 import mrbeast from './mrbeast.jpg';
 import nas_daily from './nas_daily.jpg';
-import pratyush from './pratyush.jpg'
+import pratyush from './pratyush.jpg';
+import video1 from './video.mp4'
 
 const assets = {
     pewdiepie,
@@ -95,7 +96,8 @@ const assets = {
     upload,
     user_profile,
     voice_search,
-    pratyush
+    pratyush,
+    video1,
 }
 
 export default assets;

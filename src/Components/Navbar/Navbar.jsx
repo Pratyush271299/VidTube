@@ -1,14 +1,17 @@
 import React from 'react';
 import './Navbar.css';
 import assets from '../../assets/assets'
+import { Link } from 'react-router-dom';
 
 const Navbar = ({setSidebar}) => {
   return (
     <nav className='flex-div'>
+      <Link to={'/'}>
       <div className='nav-left flex-div'>
         <img onClick={() => setSidebar(prev => prev===false?true:false)} className='menu-icon' src={assets.menu} alt="" />
         <img className='logo' src={assets.logo} alt="" />
       </div>
+      </Link>
       <div className="nav-middle flex-div">
         <div className="search-box flex-div">
         <input type="text" placeholder='Search' />

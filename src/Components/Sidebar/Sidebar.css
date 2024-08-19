@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     background: #fff;
     width: 15%;
     height: 100vh;
@@ -6,6 +6,8 @@
     top: 0;
     padding-left: 2%;
     padding-top: 80px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
 }
 .shortcut-links img{
     width: 20px;
@@ -47,4 +49,8 @@
 .small-sidebar hr{
     width: 50%;
     margin-bottom: 25px;
+}
+.side-link.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
 }
