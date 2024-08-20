@@ -46,26 +46,26 @@ const Sidebar = ({sidebar, category, setCategory}) => {
       </div>
       <div className="subscribed-list">
         <h3>Subscribed</h3>
-        <div className="side-link">
+        <a href='https://www.youtube.com/user/PewDiePie' className="side-link">
             <img src={assets.pewdiepie} alt="" />
             <p>Pewdiepie</p>
-        </div>
-        <div className="side-link">
+        </a>
+        <a href='https://www.youtube.com/MrBeast' className="side-link">
             <img src={assets.mrbeast} alt="" />
             <p>MrBeast</p>
-        </div>
-        <div className="side-link">
+        </a>
+        <a href='https://www.youtube.com/justinbieber' className="side-link">
             <img src={assets.justin_bieber} alt="" />
             <p>Justin Bieber</p>
-        </div>
-        <div className="side-link">
+        </a>
+        <a href='https://www.youtube.com/5MinutesCraftsYoutube' className="side-link">
             <img src={assets.five_minute_crafts} alt="" />
             <p>5-Minute Crafts</p>
-        </div>
-        <div className="side-link">
+        </a>
+        <a href='https://www.youtube.com/NasDaily' className="side-link">
             <img src={assets.nas_daily} alt="" />
             <p>Nas Daily</p>
-        </div>
+        </a>
       </div>
     </div>
   );
