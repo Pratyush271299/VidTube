@@ -82,7 +82,7 @@ const PlayVideo = () => {
                     <img src={item.snippet.topLevelComment.snippet.authorProfileImageUrl} alt={assets.automobiles} />
                     <div>
                         <h3>{item.snippet.topLevelComment.snippet.authorDisplayName} <span>1 day ago</span></h3>
-                        <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
+                        <p>{item.snippet.topLevelComment.snippet.textOriginal}</p>
                         <div className='comment-action'>
                             <img src={assets.like} alt="" />
                             <span>{value_converter(item.snippet.topLevelComment.snippet.likeCount)}</span>
