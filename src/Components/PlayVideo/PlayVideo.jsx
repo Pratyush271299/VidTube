@@ -12,6 +12,18 @@ const PlayVideo = () => {
     const [apiData, setApiData] = useState(null);
     const [channelData, setChannelData] = useState(null);
     const [commentData,setCommentData] = useState([]);
+    const [activeLike, setActiveLike] = useState(false);
+    const [activeDislike, setActiveDislike] = useState(false);
+
+    const handleLike = () => {
+      setActiveLike(!activeLike);
+      setActiveDislike(false);
+    }
+
+    const handleDislike = () => {
+      setActiveDislike(!activeDislike);
+      setActiveLike(false);
+    }
 
     const fetchVideoData = async () => {
         //Fetching Videos Data
@@ -45,8 +57,8 @@ const PlayVideo = () => {
       <div className="play-video-info">
         <p>{apiData?value_converter(apiData.statistics.viewCount):'NO VIEWS'} Views &bull; {moment(apiData?apiData.snippet.publishedAt:"").fromNow()}</p>
         <div>
-            <span><img src={assets.like} alt="" />{apiData?value_converter(apiData.statistics.likeCount):""}</span>
-            <span><img src={assets.dislike} alt="" /></span>
+            <span><img onClick={() => handleLike()} src={activeLike?assets.activeLike:assets.like} alt="" />{apiData?value_converter(apiData.statistics.likeCount):""}</span>
+            <span><img onClick={() => handleDislike()} src={activeDislike?assets.activeDislike:assets.dislike} alt="" /></span>
             <span><img src={assets.share} alt="" />Share</span>
             <span><img src={assets.save} alt="" />Save</span>
         </div>
@@ -58,7 +70,7 @@ const PlayVideo = () => {
             <p>{apiData?apiData.snippet.channelTitle:"Pratyush"}</p>
             <span>{channelData?value_converter(channelData.statistics.subscriberCount):""} Subscribers</span>
         </div>
-        <button>Subscribe</button>
+        <button onClick={() => handleLike()} >Subscribe</button>
       </div>
       <div className="vid-description">
         <p>{apiData?apiData.snippet.description.slice(0, 250):"Description Here"}</p>

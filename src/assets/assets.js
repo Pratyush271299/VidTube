@@ -46,9 +46,13 @@ import five_minute_crafts from './five_minute_crafts.jpg';
 import mrbeast from './mrbeast.jpg';
 import nas_daily from './nas_daily.jpg';
 import pratyush from './pratyush.jpg';
-import video1 from './video.mp4'
+import video1 from './video.mp4';
+import activeLike from './activeLike.png';
+import activeDislike from './activeDislike.png'
 
 const assets = {
+    activeDislike,
+    activeLike,
     pewdiepie,
     justin_bieber,
     five_minute_crafts,
