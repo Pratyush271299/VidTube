@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Video from './Pages/Video/Video';
 import { useState } from 'react';

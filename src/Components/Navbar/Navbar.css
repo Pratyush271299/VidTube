@@ -2,7 +2,6 @@ nav{
     padding: 10px 2%;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -36,4 +35,22 @@ nav{
 .nav-right .user-icon{
     width: 35px;
     border-radius: 50%;
+}
+@media (max-width: 900px) {
+    .menu-icon{
+        display: none;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    .logo{
+        width: 90px;
+    }
+    .nav-middle .search-box input{
+        width: 100px;
+    }
 }
